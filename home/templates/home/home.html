@@ -1,0 +1,25 @@
+{%extends "base.html" %}
+
+{% block content %}
+<section class="homeContent">
+    <div class="homeGreetingText">
+        <h3>Today`s main focus</h3>
+        <h1>Design team meeting</h1>
+        <form method="post" class="taskInput">{% csrf_token %}
+            {{form}}
+        </form>
+    </div>
+    <div class="taskList">
+        <form action="{%url 'deleteTask' %}" method="post">{% csrf_token %}
+            <ul>
+                {%for task in tasks%}
+                   <li class="listItem">
+                        {{task.task}}<button type="submit" class="deleteBtn"><i class="bi bi-trash text-danger"></i></button>
+                        <input type="hidden" name="taskID" value="{{task.pk}}">
+                   </li>
+                {%endfor%}
+            </ul>
+        </form>
+    </div>
+</section>
+{% endblock %}

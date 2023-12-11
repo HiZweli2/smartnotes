@@ -1,0 +1,122 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contentDisplay{
+    background-color: rgb(153, 0, 255);
+    padding-top: 50px;
+    left: 100pxpx;
+    padding-bottom: 60px;
+}
+
+.homeContent{
+    border: 8px solid white;
+    position: relative;
+    right: 27px;
+    border-radius: 20px;
+}
+
+.homeGreetingText{
+    padding: 30px;
+    padding-left: 90px;
+}
+
+.listItem{
+    background-color: white;
+    list-style: none;
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskList{
+    margin-right: 20px;
+}
+
+.taskList ul{
+    overflow-y: auto;
+    height: 208px;
+    margin-left: 15px;
+}
+
+.text{
+    width: 80%;
+    height: 40px;
+    border: 0px;
+}
+
+.taskInput{
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.dateInput{
+    border: 0px;
+}
+
+.homeNav{
+    background-color: white;
+    height: 83.1%;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    bottom: 0.8%;
+    left: 30px;
+}
+
+.homeSideBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeBody{
+    background-color: rgb(153, 0, 255);
+
+}
+
+.deleteBtn{
+    border: 0px;
+    background: none;
+}
+
+.userImg{
+    width: 100px;
+    border-radius: 30px;
+    margin: 20px 0px 10px 30px;
+}
+
+.userInfo{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.userInfoText{
+    display: grid;
+    padding-top: 20px;
+}
+
+.nav hr{
+    width: 60%;
+    margin-left: 50px;
+    opacity: .60;
+}
+
+.navLinks{
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+.navLinks li{
+    margin-bottom: 20px;
+}
